@@ -27,11 +27,19 @@ FIELD_TYPES = {
 
 FIELDS = dict()
 
-FIELDS["invoice_number"] = FIELD_TYPES["general"]
+FIELDS["invoice_no"] = FIELD_TYPES["general"]
 FIELDS["vendor_name"] = FIELD_TYPES["general"]
-
-FIELDS["invoice_date"] = FIELD_TYPES["date"]
-
-FIELDS["net_amount"] = FIELD_TYPES["amount"]
+FIELDS["date"] = FIELD_TYPES["date"]
+FIELDS["amount"] = FIELD_TYPES["amount"]
 FIELDS["tax_amount"] = FIELD_TYPES["amount"]
-FIELDS["total_amount"] = FIELD_TYPES["amount"]
+FIELDS["1st_sign_id"] = FIELD_TYPES["date"]
+FIELDS["2st_sign_id"] = FIELD_TYPES["date"]
+FIELDS["vendor_no"] = FIELD_TYPES["general"]
+FIELDS["beneficiary_name"] = FIELD_TYPES["general"]
+FIELDS["bl_no"] = FIELD_TYPES["general"]
+FIELDS["port_of_loading"] = FIELD_TYPES["general"]
+FIELDS["customs_declaration_no"] = FIELD_TYPES["general"]
+FIELDS["po_no"] = FIELD_TYPES["general"]
+FIELDS["clearance_date"] = FIELD_TYPES["date"]
+FIELDS["vat_mount"] = FIELD_TYPES["amount"]
+FIELDS["import_tax_amount"] = FIELD_TYPES["amount"]
