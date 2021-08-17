@@ -6,5 +6,5 @@ sudo apt install -y python-pip python-virtualenv tesseract-ocr poppler-utils lib
 # create virtual environment
 virtualenv env -p python3
 source env/bin/activate
-pip install google-cloud-vision
+pip install google-cloud-vision pdf2image
 pip install .
