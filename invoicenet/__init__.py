@@ -28,7 +28,7 @@ FIELD_TYPES = {
 FIELDS = dict()
 
 FIELDS["invoice_no"] = FIELD_TYPES["general"]
-FIELDS["vendor_name"] = FIELD_TYPES["optional"]
+FIELDS["vendor_name"] = FIELD_TYPES["general"]
 FIELDS["date"] = FIELD_TYPES["date"]
 FIELDS["amount"] = FIELD_TYPES["amount"]
 FIELDS["tax_amount"] = FIELD_TYPES["amount"]
