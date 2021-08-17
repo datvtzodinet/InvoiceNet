@@ -289,5 +289,6 @@ setuptools.setup(name='InvoiceNet',
                      "python-dateutil==2.8.1",
                      "PyYAML==5.4.1",
                      "simplejson==3.17.2",
-                     "tqdm==4.59.0"
+                     "tqdm==4.59.0",
+                     "google-cloud-vision==2.4.2"
                  ])
