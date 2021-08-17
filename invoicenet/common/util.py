@@ -91,6 +91,7 @@ class TextParser:
 
 
 def extract_words(img, height, width, ocr_engine='pytesseract'):
+    print(ocr_engine);
     if ocr_engine == 'pytesseract':
         data = pytesseract.image_to_data(img, output_type=Output.DICT)
         n_boxes = len(data['text'])
