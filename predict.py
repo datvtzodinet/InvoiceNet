@@ -22,6 +22,7 @@ import os
 import glob
 import json
 import argparse
+import time
 
 from invoicenet import FIELDS
 from invoicenet.acp.acp import AttendCopyParse
@@ -66,7 +67,7 @@ def main():
                 fields.append(field)
             else:
                 print("Could not find a trained model for field '{}', skipping...".format(field))
-
+    start_time = time.time()
     for field in fields:
         print("\nExtracting field '{}' from {} invoices...\n".format(field, len(paths)))
         model = AttendCopyParse(field=field, restore=True)
@@ -89,7 +90,7 @@ def main():
                 print("  {}: {}".format(field, labels[field]))
             fp.write(json.dumps(labels, indent=2))
             print('\n')
-
+    print("--- %s seconds ---" % (time.time() - start_time))
     print("Predictions stored in '{}'".format(args.pred_dir))
 
 
