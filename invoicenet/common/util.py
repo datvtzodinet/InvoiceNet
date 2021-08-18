@@ -143,7 +143,7 @@ def extract_words(img, height, width, ocr_engine='pytesseract'):
         import boto3
 
         # use aws textract
-        client = boto3.client('textract')
+        client = boto3.client('textract',region_name='us-west-2')
 
         # convert PpmImageFile to byte
         img_byte_arr = io.BytesIO()
