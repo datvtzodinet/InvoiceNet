@@ -246,7 +246,7 @@ try:
     cuda_version = device_info['cuda_version']
     
     if cuda_version >= 11000:
-        tensorflow_package = 'tensorflow-gpu==2.4.1'
+        tensorflow_package = 'tensorflow'
         numpy_package = 'numpy==1.19.2'
     else:
         tensorflow_package = 'tensorflow-gpu==2.3.0'
